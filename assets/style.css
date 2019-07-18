@@ -18,20 +18,81 @@ body {
   color: tomato;
   font-size: 5rem;
 }
-#addtodo {
-  background-color: orange;
-  position: relative;
-  padding: 20px;
-  border-radius: 25px;
-  border: none;
+.container {
+  border-radius: 60px;
+  width: 400px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 10px 4px rgba(43, 88, 118, 0.2);
+  overflow: hidden;
 }
-.addicon {
+.button {
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
-  padding: 1rem;
-  color: aliceblue;
-  font-size: 2rem;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  transform: rotate(0deg);
 }
-.icon--button {
-  background-color: orange;
+.button-rotate {
+  transform: rotate(45deg);
+}
+
+input {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 70px;
+  top: 12px;
+  font-size: 16px;
+  padding: 13px;
+  color: white;
+  border-radius: 60px;
+  transform-origin: -40px 0px;
+  width: 285px !important;
+  transition: all 0.6s ease;
+}
+
+.rotate-input {
+  transform: rotate(-90deg);
+  transition: all 0.6s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.icon-b {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 22px;
+}
+
+.tools {
+  position: absolute;
+  left: 52px;
+  top: 11px;
+  transform-origin: -30px 20px;
+  transform: rotate(90deg);
+  transition: all 0.6s ease;
+}
+
+.tools-rotate {
+  transform: rotate(0deg);
+  transition: all 0.6s ease;
 }

@@ -1,18 +1,23 @@
-var addlist = document.querySelector("#list");
-var addinput = document.querySelector("#addtodo");
-function addhandler(elem) {
-  if (elem.keyCode == 13) {
-    //take input
-    var val = addinput.value;
-    //create list
-    var li = document.createElement("li");
-    //text in list
-    li.textContent = val;
-    //append list
-    addlist.appendChild(li);
-    addinput.value = "";
+var flag = 0;
+
+$(".button").on("click", function() {
+  if (flag == 0) {
+    on();
+    flag = 1;
+  } else {
+    off();
+    flag = 0;
   }
+});
+
+function on() {
+  $("input").addClass("rotate-input");
+  $(".button").addClass("button-rotate");
+  $(".tools").addClass("tools-rotate");
 }
-function remhandler() {}
-addinput.addEventListener("keydown", addhandler);
-addinput.addEventListener("click", remhandler);
+
+function off() {
+  $("input").removeClass("rotate-input");
+  $(".button").removeClass("button-rotate");
+  $(".tools").removeClass("tools-rotate");
+}

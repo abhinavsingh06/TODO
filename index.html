@@ -10,19 +10,26 @@
     />
     <script src="https://kit.fontawesome.com/026e4c53e6.js"></script>
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Document</title>
+    <title>TODO</title>
   </head>
   <body>
     <div class="wrapper">
       <h1>TODOs</h1>
-      <!--<button class="icon--button">
-        <input id="addtodo" type="text" />
-      </button>-->
-      <button class="icon--button"><i class="fas fa-plus addicon"></i></button>
-
-      <ul id="list"></ul>
-    </div>
+      <div class="container">
+        <div class="button">+</div>
+        <div class="message">
+          <input type="text" placeholder="Make your list" />
+        </div>
+        <div class="tools">
+          <div class="icon-b"><i class="fas fa-clipboard-check"></i></div>
+          <div class="icon-b"><i class="fas fa-trash-alt"></i></div>
+          <div class="icon-b"><i class="fas fa-images"></i></div>
+        </div>
+        <ul></ul>
+      </div>
+      
     <!--script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>
